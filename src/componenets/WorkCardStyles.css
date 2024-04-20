@@ -1,0 +1,76 @@
+.project-heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.project-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.project-card{
+    background: #1a1919;
+    padding: 1.2rem 1rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto; /* Changed to 'auto' for maintaining aspect ratio */
+    object-fit: cover; /* Add 'cover' to ensure images cover the card size */
+}
+
+.project-title{
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.pro-details{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.pro-btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.pro-btns .btn{
+    padding: 0.5rem 1rem;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+    .project-container{
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablet screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 740px) {
+    .project-container{
+        max-width: 90%;
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+    
+    .project-card {
+        padding: 1rem; /* Adjust padding for mobile screens */
+    }
+    
+    .pro-details {
+        font-size: 1rem; /* Adjust font size for mobile screens */
+    }
+    
+    .pro-btns .btn {
+        padding: 0.5rem; /* Adjust button padding for mobile screens */
+    }
+    
+    .project-heading {
+        padding: 2rem 0; /* Reduce the top and bottom padding for the heading on mobile screens */
+    }
+}
