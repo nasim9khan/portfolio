@@ -15,12 +15,17 @@
 .project-card{
     background: #1a1919;
     padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the buttons are at the bottom */
+    height: 100%; /* Ensure cards have equal height */
 }
 
 .project-card img {
     width: 100%;
-    height: auto; /* Changed to 'auto' for maintaining aspect ratio */
-    object-fit: cover; /* Add 'cover' to ensure images cover the card size */
+    height: 60%; 
+    min-height: 60%;
+    object-fit: cover; 
 }
 
 .project-title{
@@ -29,9 +34,13 @@
 }
 
 .pro-details{
+    flex-grow: 1; /* Take up remaining space */
     padding-bottom: 1rem;
     font-size: 1.1rem;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pro-btns{
@@ -42,7 +51,21 @@
 
 .pro-btns .btn{
     padding: 0.5rem 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
+.pro-btns .btn:first-child {
+    margin-left: 0;
+}
+
+.pro-btns .btn:last-child {
+    margin-right: 0;
+}
+
 
 /* Media query for tablets */
 @media screen and (max-width: 1024px) {
