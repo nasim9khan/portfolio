@@ -1,5 +1,5 @@
 import "./HeroImgStyle.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import IntroImg from "../assets/introimg.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

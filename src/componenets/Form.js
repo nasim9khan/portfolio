@@ -1,23 +1,33 @@
-import "./FormStyles.css"
-import React from 'react'
+import './FormStyles.css';
+import React from 'react';
 
 const Form = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const mailtoLink = 'mailto:nasimakhtarkhan9@gmail.com';
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="form">
-        <form >
-            <label > Your Name</label>
-            <input type="text"></input> 
-            <label > Email</label>
-            <input type="email"></input> 
-            <label > Subject</label>
-            <input type="text"></input> 
-            <label > Message</label>
-           <textarea  rows="6" placeholder="Type your message here"></textarea>
-           <button className="btn"> Submit</button>
-        </form>
-      
-    </div>
-  )
-}
+      <form onSubmit={handleSubmit}>
+        <label>Your Name</label>
+        <input type="text" name="name" required />
 
-export default Form
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Subject</label>
+        <input type="text" name="subject" required />
+
+        <label>Message</label>
+        <textarea name="message" rows="6" placeholder="Type your message here" required />
+
+        <button type="submit" className="btn">Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default Form;

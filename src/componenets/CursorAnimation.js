@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const SparkleParticle = ({ x, y, color }) => (
@@ -28,6 +28,7 @@ const SparkleParticle = ({ x, y, color }) => (
 const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [sparkles, setSparkles] = useState([]);
+  const sparkleCounter = useRef(0);
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -35,7 +36,6 @@ const CustomCursor = () => {
         setMousePosition({ x: e.clientX, y: e.clientY });
         createSparkle(e.clientX, e.clientY);
       } else if (e.type === 'touchmove') {
-        // Handle touch events
         const touch = e.touches[0];
         setMousePosition({ x: touch.clientX, y: touch.clientY });
         createSparkle(touch.clientX, touch.clientY);
@@ -65,8 +65,9 @@ const CustomCursor = () => {
       '#1E90FF', // Dodger Blue
     ];
 
+    sparkleCounter.current += 1;
     const newSparkle = {
-      id: Date.now(),
+      id: `${Date.now()}-${sparkleCounter.current}`,
       x,
       y,
       color: colors[Math.floor(Math.random() * colors.length)],
@@ -74,7 +75,6 @@ const CustomCursor = () => {
 
     setSparkles((prev) => [...prev, newSparkle]);
 
-    // Remove sparkle after animation
     setTimeout(() => {
       setSparkles((prev) => prev.filter((sparkle) => sparkle.id !== newSparkle.id));
     }, 500);
