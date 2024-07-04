@@ -1,6 +1,6 @@
 import "./FooterStyles.css"
 import React from 'react'
-import{FaFacebook, FaHome, FaMailBulk, FaPhone, FaTwitter, FaLinkedin} from "react-icons/fa";
+import{FaFacebook, FaHome, FaMailBulk, FaPhone, FaTwitter, FaLinkedin, FaGithub} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -25,11 +25,16 @@ const Footer = () => {
         </div>
         <div className="right">
           <h4> About Me</h4>
-          <p>This is me Nasim Ahtar Khan. Front-end Web-Developer,i injoy doing new projects and design challenges</p>
+          <p>Passionate web developer specializing in creating dynamic and responsive websites using React. Dedicated to delivering seamless user experiences and innovative solutions.</p>
           <div className="social">
-            <FaFacebook size={30} style={{color:"#fff", marginRight:"1rem"}}/>
-            <FaTwitter size={30} style={{color:"#fff", marginRight:"1rem"}}/>
+            <a href="http://www.linkedin.com/in/nasim9" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem"}}/>
+            </a>
+            <a href="https://github.com/nasim9khan" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={30} style={{color:"#fff", marginRight:"1rem"}}/>
+            </a>
+            
+            
             </div>       
         </div>
       </div>

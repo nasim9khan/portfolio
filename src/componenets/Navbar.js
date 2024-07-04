@@ -3,6 +3,8 @@ import "./NavbarStyle.css"
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes} from "react-icons/fa";
+import mypic from "../assets/my-pic2.jpg"
+
 
 
 
@@ -26,7 +28,9 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" :"header"}>
       <Link to="/">
-        <h1>Portfolio</h1>
+      <img className="my-pic" src={mypic} />
+      
+       
       </Link>
       <ul className= {click ? "nav-menu active" : 
                   "nav-menu"}>
@@ -44,9 +48,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
-        {click ?(  <FaTimes size={20} style={{color:"3fff"}
+        {click ?(  <FaTimes size={20} style={{color:"#ffeb3b"}
         }/>): (
-            <FaBars size={20} style={{color:"3fff"}
+            <FaBars size={20} style={{color:"#ffeb3b"}
            }/>)}
       
       </div>

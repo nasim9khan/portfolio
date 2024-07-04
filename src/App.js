@@ -4,6 +4,8 @@ import Home from "./routes/Home"
 import About from "./routes/About"
 import Project from "./routes/Project"
 import Contact from "./routes/Contact"
+import AnimatedBackground from "./componenets/AnimatedBg"
+import CustomCursor from "./componenets/CursorAnimation"
 
 import { Route, Routes } from "react-router-dom";
 
@@ -13,6 +15,8 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
    <>
+   <AnimatedBackground/>
+   <CustomCursor/>
    <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/project" element={<Project />}/>
