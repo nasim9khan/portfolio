@@ -25,17 +25,17 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
-.my-pic{
+.my-pic {
     height: 50px;
     width: 50px;
-    border-radius: 100%;
-    box-shadow: 1px 2px 10px  rgba(229,211,53,1);
-    transition: transform 0.3s ease box-shadow 0.2s ease-in-out;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(229, 211, 53, 1); /* Adjusted box-shadow for a glow effect */
+    transition: transform 0.3s ease, box-shadow 0.2s ease-in-out; /* Added comma between transitions */
 }
-.my-pic:hover{
-    transform: scale(1.1);
-    
 
+.my-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(229, 211, 53, 1); /* Increased shadow for hover effect */
 }
 
 .hamburger{
@@ -91,12 +91,12 @@
         display: block; /* Show the hamburger icon */
         cursor: pointer; /* Indicate it's clickable */
   
-        background-color: yellow;
+        background-color: black;
         color: black;
     }
     
     header .hamburger { /* Increased specificity */
-        color: yellow; /* Ensures the hamburger color is yellow */
+        color: black; /* Ensures the hamburger color is yellow */
     }
     /* Further adjustments to nav and other elements if necessary */
 }
