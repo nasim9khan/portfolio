@@ -1,42 +1,104 @@
 .technologies {
-    text-align: center;
-    padding: 2rem;
-    max-width: 70%;
-     margin: 0 auto;
-  }
-  
-  .technologies h1{
-   margin-bottom: 30px;
-  
-    font-size: 3.3em;
-    font-weight: 600;
-  }
-  
-.tech-list-container{
- display: grid;
- grid-template-columns: repeat(3, 1fr); 
-gap: 20px;
+  text-align: center;
+  padding: 2rem;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
 }
-.last{
+
+.technologies h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.tech-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+
+.tech-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last {
   grid-column: 2;
-  }
-  
-.tech-child img{
-  margin: 10px;
-  padding: 5px;
+}
+
+.tech-child img {
+  width: 60px;
+  height: 60px;
+  margin: 5%;
+  padding: 2%;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(229, 211, 53, 1);
   transition: transform 0.3s ease, box-shadow 0.2s ease-in-out;
 }
-.tech-child img:hover{
+
+.tech-child img:hover {
   transform: scale(1.2);
   box-shadow: 0 0 30px rgba(229, 211, 53, 1);
 }
+
 .tech-child p {
   text-transform: uppercase;
   font-size: 1rem;
   text-align: center;
-  margin: 10px;
+  margin: 5%;
   color: #a9a8a5;
 }
 
+
+ /* for mobiles */
+
+@media (max-width: 480px) {
+  .technologies {
+      text-align: center;
+      padding: 1rem;
+      max-width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+     
+  }
+
+  .technologies h1 {
+      font-size: 2.em;
+      margin-bottom: 40px;
+  }
+
+  .tech-list-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5%;
+  }
+
+  .last {
+      grid-column:2;
+  }
+
+  .tech-child img {
+      width: 50px;
+      height: 50px;
+      margin: 5%;
+      padding: 2%;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(229, 211, 53, 1);
+      transition: transform 0.3s ease, box-shadow 0.2s ease-in-out;
+  }
+
+  .tech-child img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 30px rgba(229, 211, 53, 1);
+  }
+
+  .tech-child p {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      text-align: center;
+      margin: 5%;
+      color: #a9a8a5;
+  }
+}

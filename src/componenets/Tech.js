@@ -5,7 +5,7 @@ import "./TechStyle.css"
 const Technologies = () => {
   return (
     <div className="technologies">
-      <h1><span style={{color:"#dbcc47"}}>Technologies</span> I've Worked With</h1>
+      <h1><span style={{color:"#dbcc47"}}>Technologies</span> I've worked with</h1>
       <div className='tech-list-container'>
         <div className="tech-child">
         <img width="78" height="78" src="https://img.icons8.com/ultraviolet/40/react--v1.png" alt="react--v1"/>
