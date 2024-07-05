@@ -1,7 +1,7 @@
 .hero-img{
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    height: 60vh; /* Responsive height based on the viewport height */
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh; 
     position: relative;
 }
 
@@ -26,36 +26,36 @@
 }
 
 .hero-img h1{
-    font-size: 2.4rem; /* Default font size for larger screens */
-    color: #fff; /* Assuming you want the text color to be white */
+    font-size: 2.4rem; 
+    color: #fff; 
 }
 
 .hero-img p{
     font-size: 1.4rem;
     text-align: center;
-    color: #fff; /* Assuming you want the text color to be white */
-    margin: 1rem 0; /* Added margin for spacing */
+    color: #fff; 
+    margin: 1rem 0; 
 }
 
 /* Responsive adjustments for tablets */
 @media screen and (max-width: 1024px) {
     .hero-img h1 {
-        font-size: 2rem; /* Smaller font size for tablet devices */
+        font-size: 2rem; 
     }
     .hero-img p {
-        font-size: 1.2rem; /* Smaller font size for tablet devices */
+        font-size: 1.2rem; 
     }
 }
 
 /* Responsive adjustments for mobile devices */
 @media screen and (max-width: 640px) {
     .hero-img {
-        height: 50vh; /* Adjust height for mobile devices */
+        height: 50vh;
     }
     .hero-img h1 {
-        font-size: 1.8rem; /* Even smaller font size for mobile devices */
+        font-size: 1.8rem; 
     }
     .hero-img p {
-        font-size: 1rem; /* Even smaller font size for mobile devices */
+        font-size: 1rem; 
     }
 }

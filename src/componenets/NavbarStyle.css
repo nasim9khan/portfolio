@@ -10,7 +10,7 @@
 }
 .header-bg{
     background-color:black;
-    transition: background-color 0.5s; /* Specify the property that transitions */
+    transition: background-color 0.5s; 
 }
 
 .nav-menu {
@@ -29,13 +29,13 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(229, 211, 53, 1); /* Adjusted box-shadow for a glow effect */
-    transition: transform 0.3s ease, box-shadow 0.2s ease-in-out; /* Added comma between transitions */
+    box-shadow: 0 0 20px rgba(229, 211, 53, 1); 
+    transition: transform 0.3s ease, box-shadow 0.2s ease-in-out;
 }
 
 .my-pic:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(229, 211, 53, 1); /* Increased shadow for hover effect */
+    box-shadow: 0 0 30px rgba(229, 211, 53, 1); 
 }
 
 .hamburger{
@@ -44,9 +44,9 @@
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) { /* Adjust for tablet sizes */
+@media screen and (max-width: 768px) { 
     .header {
-        height: auto; /* Allow the header to expand as needed */
+        height: auto; 
     }
 
     .nav-menu {
@@ -54,18 +54,18 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh; /* Take up full height */
+        height: 100vh; 
         background: rgba(0,0,0,0.9);
-        position: fixed; /* Fixed instead of absolute to cover the screen */
-        top: 90px; /* Start below the header */
+        position: fixed; 
+        top: 90px; 
         right: 0;
         left: 0;
-        transform: translateX(100%); /* Start offscreen to the right */
-        z-index: 10; /* Ensure it's above other content */
+        transform: translateX(100%); 
+        z-index: 10;
         transition: transform 0.3s;
     }
     .nav-menu.active {
-        transform: translateX(0); /* Bring on screen when active */
+        transform: translateX(0); 
     }
 
     .nav-menu li {
@@ -75,28 +75,28 @@
         font-size: 2rem;
     }
     .hamburger {
-        display: block; /* Show the hamburger icon */
-        cursor: pointer; /* Indicate it's clickable */
+        display: block; 
+        cursor: pointer; 
        color: black !important;
     }
     
 }
 
-@media screen and (max-width: 480px) { /* Adjust for mobile sizes */
+@media screen and (max-width: 480px) { 
     .header {
-        padding: 0.5rem; /* Reduce padding on smaller screens */
+        padding: 0.5rem; 
     }
 
     .hamburger {
-        display: block; /* Show the hamburger icon */
-        cursor: pointer; /* Indicate it's clickable */
+        display: block; 
+        cursor: pointer; 
   
         background-color: black;
         color: black;
     }
     
-    header .hamburger { /* Increased specificity */
-        color: black; /* Ensures the hamburger color is yellow */
+    header .hamburger {
+        color: black; 
     }
-    /* Further adjustments to nav and other elements if necessary */
+   
 }

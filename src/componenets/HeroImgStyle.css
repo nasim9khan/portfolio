@@ -58,18 +58,18 @@
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
     .hero .content h1{
-        font-size: 3.5rem; /* Slightly smaller font size for tablets */
+        font-size: 3.5rem; 
     }
 }
 
 @media screen and (max-width: 640px) {
     .hero .content h1{
-        font-size: 3rem; /* Even smaller font size for mobile devices */
+        font-size: 3rem; 
     }
     .hero .content p {
-        font-size: 1rem; /* Smaller paragraph font size for mobile devices */
+        font-size: 1rem; 
     }
     .content .btn{
-        padding: 0.8rem 1.2rem; /* Larger touch targets for buttons on mobile */
+        padding: 0.8rem 1.2rem; 
     }
 }

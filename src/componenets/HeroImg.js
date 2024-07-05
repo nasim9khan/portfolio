@@ -12,7 +12,7 @@ const HeroImg = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.2, 0.65, 0.3, 0.9], // Custom easing function
+        ease: [0.2, 0.65, 0.3, 0.9], 
       },
     },
   };
@@ -23,7 +23,7 @@ const HeroImg = () => {
       opacity: 1,
       transition: {
         delay: 0.5,
-        staggerChildren: 0.19, // Increased delay between letters
+        staggerChildren: 0.19,
       },
     },
   };

@@ -33,9 +33,8 @@ const Footer = () => {
             <a href="https://github.com/nasim9khan" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} style={{color:"#fff", marginRight:"1rem"}}/>
             </a>
-            
-            
-            </div>       
+             </div>  
+            <a href="https://icons8.com">Icons8</a>     
         </div>
       </div>
     </div>

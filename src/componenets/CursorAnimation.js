@@ -53,16 +53,16 @@ const CustomCursor = () => {
 
   const createSparkle = (x, y) => {
     const colors = [
-      '#FFD700', // Gold
-      '#FF69B4', // Hot Pink
-      '#00CED1', // Dark Turquoise
-      '#FF4500', // Orange Red
-      '#32CD32', // Lime Green
-      '#8A2BE2', // Blue Violet
-      '#FF1493', // Deep Pink
-      '#00FFFF', // Cyan
-      '#FF00FF', // Magenta
-      '#1E90FF', // Dodger Blue
+      '#FFD700', 
+      '#FF69B4', 
+      '#00CED1', 
+      '#FF4500', 
+      '#32CD32', 
+      '#8A2BE2', 
+      '#FF1493', 
+      '#00FFFF', 
+      '#FF00FF', 
+      '#1E90FF', 
     ];
 
     sparkleCounter.current += 1;
