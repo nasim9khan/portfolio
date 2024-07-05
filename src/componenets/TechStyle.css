@@ -1,12 +1,14 @@
 .technologies {
     text-align: center;
     padding: 2rem;
+    max-width: 70%;
+     margin: 0 auto;
   }
   
   .technologies h1{
-    margin: 50px;
+   margin-bottom: 30px;
   
-    font-size: 3em;
+    font-size: 3.3em;
     font-weight: 600;
   }
   

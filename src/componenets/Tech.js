@@ -4,7 +4,7 @@ import "./TechStyle.css"
 
 const Technologies = () => {
   return (
-    <section className="technologies">
+    <div className="technologies">
       <h1><span style={{color:"#dbcc47"}}>Technologies</span> I've Worked With</h1>
       <div className='tech-list-container'>
         <div className="tech-child">
@@ -51,7 +51,7 @@ const Technologies = () => {
         
       </div>
       
-    </section>
+    </div>
   );
 };
 
